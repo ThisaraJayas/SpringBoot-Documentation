@@ -2,17 +2,17 @@
 
 
 ```java
-package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.occsuss.rest.webservices.restfulwebservices.jwt;
 
 public record JwtTokenRequest(String username, String password) {}
 
 
-package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.occsuss.rest.webservices.restfulwebservices.jwt;
 
 public record JwtTokenResponse(String token) {}
 
 
-package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.occsuss.rest.webservices.restfulwebservices.jwt;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -57,7 +57,7 @@ public class JwtTokenService {
 }
 
 
-package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.occsuss.rest.webservices.restfulwebservices.jwt;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -97,8 +97,7 @@ public class JwtAuthenticationController {
     }
 }
 
-
-package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.occsuss.rest.webservices.restfulwebservices.jwt;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
